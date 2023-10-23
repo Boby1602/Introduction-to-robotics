@@ -1,0 +1,32 @@
+int rosu = 5;
+int albastru = 11;
+int verde = 9;
+
+int valoare_rosu, valoare_albastru, valoare_verde, pot_val_rosu, pot_val_albastru, pot_val_verde;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(rosu, OUTPUT);
+  pinMode(albastru, OUTPUT);
+  pinMode(verde, OUTPUT);
+  pinMode(A0, INPUT);
+  pinMode(A3, INPUT);
+  pinMode(A5, INPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  pot_val_rosu = analogRead(A0);
+  pot_val_verde = analogRead(A3);
+  pot_val_albastru = analogRead(A5);
+  valoare_rosu = map(pot_val_rosu, 0, 1023, 0, 255);
+  valoare_albastru = map(pot_val_albastru, 0 ,1023, 0, 255);
+  valoare_verde = map(pot_val_verde, 0, 1023, 0, 255);
+  analogWrite(rosu, valoare_rosu);
+  analogWrite(albastru, valoare_albastru);
+  analogWrite(verde, valoare_verde);
+  delay(10);
+
+
+}
