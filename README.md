@@ -10,6 +10,7 @@ This project is a game like "Simon says". It has these components:
   5. 1 arduino uno
 
 The project presents itself looking like this:
+![SimonSays1](https://github.com/Boby1602/Introduction-to-robotics/assets/115077495/d177f506-99fd-483e-a529-e89be1925f78)
 
-![First project photo](Images/SimonSays1.jpeg
-![First project photo](Images/SimonSays1.jpeg
+
+![SimonSays2](https://github.com/Boby1602/Introduction-to-robotics/assets/115077495/deb5485f-46be-4b99-b0a1-340c0419df64)
